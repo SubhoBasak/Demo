@@ -1,0 +1,212 @@
+/* add new font style */
+/* you can download more fonts from https://fonts.google.com/ */
+@font-face {
+  font-family: Pacifico;
+  src: url(../fonts/pacifico.ttf);
+}
+
+/* it's mean all items initial margin and padding will be zero */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  max-width: 100% !important;
+}
+
+/* style our navigation bar */
+nav {
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  min-height: 3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0 0 5px 5px #22222222;
+}
+nav a {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  font-size: 26px;
+  font-weight: bold;
+  text-decoration: none;
+  color: orangered;
+}
+nav a p {
+  margin-left: 1rem;
+  font-family: Pacifico;
+}
+.nav-icon {
+  width: 48px;
+  height: 48px;
+  max-width: 48px;
+  max-height: 48px;
+  object-fit: scale-down;
+  margin-left: 1.5rem;
+}
+
+.top-banner {
+  margin: auto;
+  width: 100%;
+  max-width: 1100px;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.top-banner img {
+  width: 50%;
+  max-width: 50%;
+  object-fit: scale-down;
+}
+.top-banner-info {
+  margin: 0;
+  width: 50%;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.top-banner-info h1 {
+  color: dodgerblue;
+  font-size: 84px;
+  font-weight: bold;
+  font-family: Pacifico;
+}
+.top-banner-info p {
+  width: 90%;
+  max-width: 400px;
+  color: #999;
+  font-size: 22px;
+  text-align: center;
+}
+.btn-grp {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.btn-grp button {
+  margin: 0.3rem;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+  outline: none;
+  font-size: 16px;
+  border-width: 2px;
+  border-style: solid;
+  transition: 1s ease all;
+}
+.btn-grp button:nth-child(1) {
+  background-color: orangered;
+  color: #fff;
+  border-color: orangered;
+}
+.btn-grp button:nth-child(2) {
+  background-color: #fff;
+  border-color: orangered;
+  color: orangered;
+}
+.btn-grp button:hover {
+  transform: scale(1.1);
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+  background-color: #ddd;
+  padding: 2rem;
+}
+.card {
+  padding: 1.5rem;
+  width: 18rem;
+  max-width: 90%;
+  margin-top: 2rem;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 3px 3px 5px 3px #22222222;
+  transition: 1s ease all;
+}
+.card img {
+  max-width: 100%;
+  object-fit: scale-down;
+}
+.card h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: orangered;
+  font-family: Pacifico;
+}
+.card p {
+  text-align: center;
+  font-size: 22px;
+  color: #555;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+
+footer {
+  padding-top: 2rem;
+  border-top: 3px solid orangered;
+  background-color: rgb(9, 7, 20);
+}
+.footer-links {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+}
+.footer-links div {
+  width: 25%;
+  max-width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-links img {
+  max-width: 60%;
+  object-fit: scale-down;
+}
+.footer-links h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+  font-family: Pacifico;
+  color: orangered;
+}
+.footer-links li {
+  margin-top: 1rem;
+  font-size: 18px;
+  color: #ddd;
+  list-style: none;
+}
+.footer-links a {
+  color: rgb(87, 167, 248);
+  text-decoration: none;
+}
+footer p {
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-size: 16px;
+  color: #999;
+  background-color: rgb(17, 15, 27);
+}
+@media screen and (max-width: 600px) {
+  .top-banner {
+    flex-direction: column;
+  }
+  .card-container {
+    flex-direction: column;
+  }
+}
